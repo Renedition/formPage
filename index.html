@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eac26cf426.js" crossorigin="anonymous"></script>
+
+    <title>Register</title>
+</head>
+<body>
+
+    <nav>
+        <label class="logo"> Alt Bank</label>
+        <ul class="navhome">
+            <li>
+                <a class="navlink" href="#">Home</a>
+            </li>
+            <li>s
+                <a class="navlink" href="#">Services</a>
+            </li>
+            <li>
+                <a class="navlink" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="column">
+        <div class="columnLeft">
+            <div style="width: 80%;padding-top: 10px;">
+                <!--Padding-->
+                <img class="image" src="inserting-coin-on-the-vintage-piggy-bank-picture-id470509175.webp" alt="PlaceHoldImge">
+                
+            </div>
+        </div>
+        <div class="columnRight">
+            <br>
+            
+            <h1 class="header1">Register with Alt Banking, the best banker</h1>
+            <h1 class="header1"> You know what to do</h1>
+
+            <form>
+                <!-- User Name Input,
+                Pattern can iclude A-Z a-z 0-9-->
+                <div id="flname">
+                    <input type="text" 
+                    id="fName" 
+                    placeholder="First Name" 
+                    name="fName"
+                    pattern="^[a-zA-Z]{2,}"
+                    title="Must be text only at least 2 characters" required>
+
+
+                    <input type="text" 
+                    id="lName" 
+                    placeholder="Last Name" 
+                    name="lName"
+                    pattern="^[a-zA-Z]{2,}"
+                    title="Must be text only at least 2 characters" required>
+                </div>
+
+                <input type="text" 
+                id="user_Name" 
+                placeholder="Username " 
+                name="user_Name"
+                pattern="([a-zA-Z0-9\\_\\-\\.]+).{5-15}"
+                title="Must be between 5-15" required>
+                <input type="email" 
+                id="useremail" 
+                placeholder="Email" 
+                name="email"    required>
+                
+                <input type="password" 
+                id="password1" 
+                placeholder=" Password" 
+                name="password"
+                pattern="(?=.*\W+)(?=.*?[#?!@$%^&.*;'\\]).{8,15}}"
+                required> 
+
+                <input type="password" 
+                id="password2" 
+                placeholder="Confirm Password" 
+                name="password"
+                pattern="(?=.*\W+)(?=.*?[#?!@$%^&.*;'\\]).{8,15}"
+                required> 
+                <span>
+                    <i class="fa-solid fa-eye" id="eye" onclick="toggle()"></i>
+                </span>
+
+                <p class="descrp"> At least one number,upper,lower, and one special character is required</p>
+                <p id="validation"></p>
+                <br>
+                <button id="register" type="button" onclick="checkpass()">Register</button>
+            </form> 
+
+        </div> 
+        <script>
+            var state = false;
+
+            function checkpass(){
+                let password = document.getElementById("password1").value;
+                let confirmpass = document.getElementById("password2").value;
+                let errcheck = document.getElementById("validation");
+
+                if( password != confirmpass){
+                    event.preventDefault();
+                    errcheck.textContent="Passwords do not match!"
+                    errcheck.style.color="red";
+                }else{
+                    document.getElementById("register").setAttribute("type","submit")
+                }
+            }
+            function toggle(){
+                if(state){
+                    document.querySelector("#password1").setAttribute("type", "password");
+                    document.querySelector("#password2").setAttribute("type", "password");
+                    state = false;
+                    document.getElementById("eye").setAttribute("class","fa-solid fa-eye")
+
+                }
+                else{
+                    document.querySelector("#password2").setAttribute("type", "text");
+                    document.querySelector("#password1").setAttribute("type", "text");                    document.getElementById("eye").style.color='#587ef';
+                    state = true;
+                    document.getElementById("eye").setAttribute("class","fa-regular fa-eye")
+                }
+            }
+        </script>-->
+    </div>
+
+</body>
+</html>

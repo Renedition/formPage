@@ -1,0 +1,124 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: rgb(54, 54, 54);
+}
+.logo{
+    color:rgb(174, 251, 186);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.navhome{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+.navhome a{
+    color:rgb(174, 251, 186);
+    text-decoration: none;
+}
+.navhome li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+
+}
+.navhome li:hover{
+    position: relative;
+    bottom: 1px;
+    background-color:rgb(79, 75, 75)  
+}
+.column{
+    display: flex;
+    background-color: rgb(151, 197, 183);
+}
+.columnLeft{
+    background-color:rgb(151, 197, 183);
+    max-width: 960px;
+    padding-left: 5%;
+}
+.columnRight{
+    padding-bottom: 10rem;
+    padding: 2vh 5vh 10vh 15vh;
+}
+
+.image{
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 20%;
+    
+}
+#flname{
+    width: 81%;
+    display: flex;
+}
+
+input{
+    width: 80%;
+    border: 2px solid rgb(151, 197, 183);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+input:hover{
+    border-color: aquamarine;
+    box-shadow: 0 0 10px aquamarine;
+    transition: .3s;
+}
+
+input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 10px dodgerblue;
+    transition: .3s;
+
+}
+.descrp{
+    font-size: small;
+    color: rgba(40, 35, 35, 0.543) 
+}
+span{
+    position: relative;
+    right: 11%;
+    top: 60%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+body{
+    background-color: rgb(79, 75, 75);
+
+}
+.creds {
+    background-color: rgb(79, 75, 75);
+    padding: 2%;
+    color:rgb(174, 251, 186);
+}
+.creds a{
+    text-decoration: none;
+    color:rgb(174, 251, 186);
+}
+
+button{
+    color: rgb(54, 54, 54);
+    width: 60%;
+    position: relative;
+    left: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: rgb(148, 208, 157);
+    background-color:rgb(174, 251, 186);
+    font-size: 20px;
+    font-weight: bold;
+} 
+
